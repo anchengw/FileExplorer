@@ -1,0 +1,101 @@
+VERSION 5.00
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
+Object = "{D76D7130-4A96-11D3-BD95-D296DC2DD072}#1.0#0"; "Vsflex7d.ocx"
+Object = "{F32F2023-8607-11D1-8892-0080C75FFCC4}#1.0#0"; "LDDateTm.ocx"
+Begin VB.Form ckdlr 
+   Caption         =   "出库单录入"
+   ClientHeight    =   6885
+   ClientLeft      =   60
+   ClientTop       =   450
+   ClientWidth     =   9945
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   ScaleHeight     =   6885
+   ScaleWidth      =   9945
+   StartUpPosition =   1  '所有者中心
+   Begin MSAdodcLib.Adodc Adodc1 
+      Height          =   375
+      Left            =   240
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   2415
+      _ExtentX        =   4260
+      _ExtentY        =   661
+      ConnectMode     =   0
+      CursorLocation  =   3
+      IsolationLevel  =   -1
+      ConnectionTimeout=   15
+      CommandTimeout  =   30
+      CursorType      =   3
+      LockType        =   3
+      CommandType     =   8
+      CursorOptions   =   0
+      CacheSize       =   50
+      MaxRecords      =   0
+      BOFAction       =   0
+      EOFAction       =   0
+      ConnectStringType=   1
+      Appearance      =   1
+      BackColor       =   -2147483643
+      ForeColor       =   -2147483640
+      Orientation     =   0
+      Enabled         =   -1
+      Connect         =   ""
+      OLEDBString     =   ""
+      OLEDBFile       =   ""
+      DataSourceName  =   ""
+      OtherAttributes =   ""
+      UserName        =   ""
+      Password        =   ""
+      RecordSource    =   ""
+      Caption         =   "Adodc1"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "宋体"
+         Size            =   9
+         Charset         =   134
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      _Version        =   393216
+   End
+   Begin VB.CommandButton cmd1 
+      Caption         =   "添  加 (&A)"
+      Height          =   375
+      Left            =   600
+      Style           =   1  'Graphical
+      TabIndex        =   2
+      Top             =   6240
+      Width           =   1500
+   End
+   Begin VB.CommandButton cmd3 
+      Caption         =   "保   存 (&S)"
+      Height          =   375
+      Left            =   5400
+      TabIndex        =   6
+      Top             =   6240
+      Width           =   1500
+   End
+   Begin VB.CommandButton cmd2 
+      Caption         =   "删   除 (&D)"
+      Height          =   375
+      Left            =   3000
+      TabIndex        =   4
+      Top             =   6240
+      Width           =   1500
+   End
+   Begin VB.CommandButton cmd4 
+      Caption         =   "退   出 (&Q)"
+      Height          =   375
+      Left            =   7800
+      TabIndex        =   5
+      Top             =   6240
+      Width           =   1500
+   End
+   Begin VB.Frame Frame1 
+      Height          =   1215
+      Left            =   50
+      TabIndex        =   0
+      
